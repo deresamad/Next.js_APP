@@ -1,20 +1,104 @@
 # Next.js Application
 
-This is a modern web application built with Next.js that demonstrates various React concepts including component creation, state management, event handling, and more.
+This is a modern Next.js application demonstrating various React and Next.js concepts. The application features a clean, responsive design with dark mode support and includes three main components: Navigation, Todo List, and User Profile.
+
+## Features
+
+### 1. Home Page
+- Welcome screen with overview of application features
+- Clean, modern UI with responsive design
+- Navigation menu for easy access to all sections
+
+![Home Page](/public/screenshots/home.png)
+
+### 2. Todo List
+- Add and delete todo items
+- Clean interface for task management
+- Persistent state management
+- Interactive UI elements
+
+![Todo List](/public/screenshots/todo.png)
+
+### 3. User Profile
+- User information management
+- Theme selection (Light/Dark mode)
+- Notification preferences
+- Settings persistence
+
+![User Profile](/public/screenshots/profile.png)
+
+## Technical Implementation
+
+The application demonstrates the following concepts:
+
+1. **Component Creation and Composition** (2 points)
+   - Modular component architecture
+   - Reusable UI components
+   - Props and component communication
+
+2. **State Management** (2 points)
+   - React useState and useEffect hooks
+   - Local state management
+   - Persistent state across sessions
+
+3. **Event Handling** (2 points)
+   - Form submissions
+   - Button click handlers
+   - Input change handlers
+
+4. **Conditional Rendering** (2 points)
+   - Dynamic UI updates
+   - State-based content display
+   - Loading states and error handling
+
+5. **Styling** (1 point)
+   - CSS Modules implementation
+   - Responsive design
+   - Dark mode support
+
+6. **Application Structure** (1 point)
+   - Clean project organization
+   - Intuitive navigation
+   - Best practices in file structure
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Technologies Used
+
+- Next.js 15.3.3
+- React
+- CSS Modules
+- TypeScript
 
 ## Project Structure
 
 ```
 my-next-app/
-├── components/           # Reusable components
-│   ├── Navigation.tsx   # Site-wide navigation
-│   ├── Todo.tsx        # Todo list management
-│   └── UserProfile.tsx # User profile management
-├── src/
-│   └── app/            # Next.js app directory
-│       ├── page.tsx    # Home page
-│       ├── todos/      # Todo list page
-│       └── profile/    # Profile page
+├── app/
+│   ├── components/
+│   │   ├── Navigation.tsx
+│   │   ├── Todo.tsx
+│   │   └── UserProfile.tsx
+│   ├── page.tsx
+│   ├── todos/
+│   │   └── page.tsx
+│   └── profile/
+│       └── page.tsx
+├── public/
+│   └── screenshots/
+└── styles/
+    └── *.module.css
 ```
 
 ## Features and Implementation Details
@@ -52,13 +136,6 @@ my-next-app/
 - Type definitions
 - Component modularity
 
-## Features
-
-- Todo List Management
-- User Profile Settings
-- Modern UI with Dark Mode Support
-- Responsive Design
-
 ## Getting Started
 
 First, run the development server:
@@ -68,29 +145,3 @@ npm run dev
 # or
 yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Technologies Used
-
-- Next.js 13+ with App Router
-- React with TypeScript
-- CSS Modules for styling
-- Modern JavaScript features
-
-## Screenshots
-
-[Screenshots will be added showing the application in action]
-
-## Rubric Achievement
-
-This project successfully implements all requirements from the rubric:
-
-1. ✅ Application Structure (1/1): Clear organization of files and folders
-2. ✅ Component Creation (2/2): Three functional components with props
-3. ✅ State Management (2/2): Effective state management across components
-4. ✅ Event Handling (2/2): Multiple user interactions and state updates
-5. ✅ Conditional Rendering (2/2): Various conditional content displays
-6. ✅ Styling (1/1): Modern and responsive design
-
-Total Score: 10/10
