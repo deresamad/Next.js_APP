@@ -3,6 +3,21 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Navigation.module.css';
 
+/**
+ * Navigation Component
+ * 
+ * A responsive navigation bar that shows the current active route.
+ * 
+ * Features:
+ * - Automatic active link highlighting based on current route
+ * - Responsive design with hover effects
+ * - Consistent styling across the application
+ * 
+ * Props: None
+ * 
+ * State Management:
+ * - Uses Next.js usePathname hook to track current route
+ */
 const Navigation = () => {
     const pathname = usePathname();
 
